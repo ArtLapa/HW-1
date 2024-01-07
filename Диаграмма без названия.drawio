@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-01-07T21:04:37.067Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="YLQKKU1D1RRh2iKAhhEt" version="22.1.17" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-07T21:14:53.466Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="V-mS9EkvOdBVZFszwMbL" version="22.1.17" type="github">
   <diagram name="Page-1" id="3e8102d1-ef87-2e61-34e1-82d9a586fe2e">
-    <mxGraphModel dx="1434" dy="780" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
+    <mxGraphModel dx="1817" dy="390" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -13,8 +13,8 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="LZEuu_zLPpksMyho3lif-1" value="   PersonalAssistant    " style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry y="340" width="210" height="100" as="geometry" />
+        <mxCell id="LZEuu_zLPpksMyho3lif-1" value="   PersonalAssistant    &lt;br&gt;contacts: List&amp;lt;Contact&amp;gt;&amp;nbsp; &amp;nbsp;notes: List&amp;lt;Note&amp;gt;&amp;nbsp; &amp;nbsp;files: List&amp;lt;File&amp;gt;&lt;br&gt;+add_contact(name, address, phone,&amp;nbsp;&lt;br&gt;email, birthday): void&amp;nbsp;&lt;br&gt;&amp;nbsp;+search_contacts(query): List&amp;lt;Contact&amp;gt;&lt;br&gt;&amp;nbsp;+add_note(text, tags): void         || +search_notes_by_tags(query_tags): List&amp;lt;Note&amp;gt;&lt;br&gt;+add_file(name, category): void&amp;nbsp;&lt;br&gt;+sort_files_by_category(folder_path): void" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-30" y="210" width="240" height="230" as="geometry" />
         </mxCell>
         <mxCell id="LZEuu_zLPpksMyho3lif-2" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="LZEuu_zLPpksMyho3lif-1" target="LZEuu_zLPpksMyho3lif-3">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -22,8 +22,8 @@
             <mxPoint x="370" y="390" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="LZEuu_zLPpksMyho3lif-3" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="310" y="340" width="210" height="100" as="geometry" />
+        <mxCell id="LZEuu_zLPpksMyho3lif-3" value=" File  &lt;br&gt; -name: str -category: str&lt;br&gt;+__init__(name, category): void &amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="210" width="210" height="230" as="geometry" />
         </mxCell>
         <mxCell id="LZEuu_zLPpksMyho3lif-5" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="LZEuu_zLPpksMyho3lif-3" target="LZEuu_zLPpksMyho3lif-7">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -31,8 +31,8 @@
             <mxPoint x="580" y="390" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="LZEuu_zLPpksMyho3lif-7" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="600" y="340" width="140" height="100" as="geometry" />
+        <mxCell id="LZEuu_zLPpksMyho3lif-7" value=" Note     &lt;br&gt;-text: str&amp;nbsp; -tags: List[str]&amp;nbsp;&lt;br&gt;+__init__(text, tags): void   " style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="210" width="140" height="230" as="geometry" />
         </mxCell>
         <mxCell id="LZEuu_zLPpksMyho3lif-9" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="LZEuu_zLPpksMyho3lif-7" target="LZEuu_zLPpksMyho3lif-10">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -40,8 +40,59 @@
             <mxPoint x="920" y="390" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="LZEuu_zLPpksMyho3lif-10" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="840" y="342.5" width="150" height="95" as="geometry" />
+        <mxCell id="LZEuu_zLPpksMyho3lif-10" value=" Contact &lt;br&gt;-name: str&amp;nbsp; -address: str&amp;nbsp; &amp;nbsp;-phone: str&amp;nbsp; -email: str&amp;nbsp; -birthday: datetime.date&lt;br&gt;+__init__(name, address, phone,email, birthday): void    " style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="840" y="210" width="150" height="227.5" as="geometry" />
+        </mxCell>
+        <mxCell id="LZEuu_zLPpksMyho3lif-12" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.527;exitY=0.993;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="LZEuu_zLPpksMyho3lif-10" target="LZEuu_zLPpksMyho3lif-13">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="750" y="580" as="sourcePoint" />
+            <mxPoint x="920" y="570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LZEuu_zLPpksMyho3lif-13" value=" MainMenuUI  &lt;br&gt;+display(): void" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="850" y="540" width="140" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="LZEuu_zLPpksMyho3lif-14" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.011;exitY=0.547;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="LZEuu_zLPpksMyho3lif-13" target="LZEuu_zLPpksMyho3lif-15">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="750" y="620" as="sourcePoint" />
+            <mxPoint x="740" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LZEuu_zLPpksMyho3lif-15" value="  FileUI  &lt;br&gt;-files: List&amp;lt;File&amp;gt; &lt;br&gt;+display(): void" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="575" y="560" width="190" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="LZEuu_zLPpksMyho3lif-16" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.997;entryY=0.483;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="LZEuu_zLPpksMyho3lif-15" target="LZEuu_zLPpksMyho3lif-17">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="410" y="630" as="sourcePoint" />
+            <mxPoint x="480" y="640" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="490" y="640" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LZEuu_zLPpksMyho3lif-17" value=" NoteUI&lt;br&gt;-notes: List&amp;lt;Note&amp;gt;&lt;br&gt;+display(): void " style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="550" width="190" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="LZEuu_zLPpksMyho3lif-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.521;entryY=0.008;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="LZEuu_zLPpksMyho3lif-17" target="LZEuu_zLPpksMyho3lif-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LZEuu_zLPpksMyho3lif-19" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="LZEuu_zLPpksMyho3lif-17" target="LZEuu_zLPpksMyho3lif-20">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="410" y="580" as="sourcePoint" />
+            <mxPoint x="200" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LZEuu_zLPpksMyho3lif-20" value=" ContactUI &lt;br&gt;-contacts: List&amp;lt;Contact&amp;gt;&lt;br&gt;+display(): void " style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-50" y="550" width="260" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="LZEuu_zLPpksMyho3lif-21" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="LZEuu_zLPpksMyho3lif-20" target="LZEuu_zLPpksMyho3lif-22">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-70" y="640" as="sourcePoint" />
+            <mxPoint x="-160" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LZEuu_zLPpksMyho3lif-22" value="UIComponent&lt;br&gt;+display(): void " style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-280" y="550" width="180" height="180" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
